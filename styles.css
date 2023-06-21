@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #cce6f4;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1070px;
+    height: 600px;
+}
+
+.square {
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+}
+
+.mole {
+    background-image: url('mole.png');
+    background-size: cover;
+}
+
+.info {
+    display: flex;
+    gap: 650px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.start {
+    background-color: #5CB8E9;
+    border-radius: 15px;
+    font-size: 18px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+
