@@ -5,9 +5,9 @@ const score = document.querySelector('#score')
 
 let result = 0
 let hitPosition
-let currentTime = 10
+let currentTime = 30
 let timerId = null
-let countdownTimerId = 10
+let countdownTimerId = 30
 
 function randomSquare() {
     squares.forEach(square => { //Clears mole
@@ -31,10 +31,10 @@ squares.forEach(square => {
 })
 
 function moveMole() {
-    currentTime = 10
+    currentTime = 30
     result = 0
     score.textContent = result
-    timerId = setInterval(randomSquare, 1000)
+    timerId = setInterval(randomSquare, 700)
     countdownTimerId = setInterval(countdown, 1000)
 }
 
@@ -46,6 +46,5 @@ function countdown() {
     if(currentTime == 0) { 
         clearInterval(countdownTimerId)
         clearInterval(timerId)
-        alert("Time's up! Your final score is: " + result)
     }
 }
